@@ -1,0 +1,8 @@
+@charset "UTF-8"; /*Regra que permite acentuação dentro do CSS*/
+
+body{
+    background-color: rgb(111, 206, 134);
+}
+h1{
+    color: aqua;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagen dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ao simplemente aumentar e diminuir o tamanho do seu navegador.</p>
+    <picture>
+         <!--Se o navegador for <= 700px, ele carrega a imagem P-->
+         <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        
+         <!--Se o navegador for <= 1000px, ele carrega a imagem M-->
+         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        
+        <!--o navegador vai carregar a imagem G-->
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTLM5.</p>
+    <audio src="midia/decay-tower.mp3" controls loop></audio>
+
+    <h1>Outras Formas</h1>
+    <p>Outras formas de coda áudio.</p>
+    <audio controls loop>
+        <source src="midia/decay-tower.mp3" type="audio/mpeg">
+        <source src="midia/decay-tower.ogg" type="audio/ogg">
+        <source src="midia/decay-tower.wav" type="audio/wav"> 
+    </audio>
+    <br>
+    <p>Caso seu navegador não seja compatível <a href="midia/decay-tower.rar" download="decay-tower.rar" type="application/rar">Clique aqui</a> para download.</p>
+
+    <h1>Melhor forma de codar</h1>
+    <p>Forma que entrega opções para o usuário e mantém o site leve.</p>
+    
+    <audio src="midia/decay-tower.mp3" controls autoplay loop></audio>
+    
+    <p>Para download <a href="midia/decay-tower.rar" download="decay-tower.rar" type="application/rar"> clique aqui.</a></p>
+</body>
+</html>

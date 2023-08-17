@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        background-color: lightgray;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+      }
+      header {
+        background-color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 10px;
+      }
+
+      nav {
+        background-color: lightgray;
+        box-shadow: inset 3px 3px 3px rgba(77, 76, 76, 0.534);
+      }
+      nav:hover {
+        background-color: rgb(17, 16, 16);
+      }
+      nav > a {
+        padding: 10px;
+        text-decoration: none;
+        color: red;
+      }
+      nav > a:hover {
+        text-decoration: underline;
+        color: blue;
+        font-size: 18px;
+      }
+      #noticias {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 400px;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 30px 10px;
+      }
+      main {
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 9px 0px black;
+      }
+      #bola {
+        background-color: black;
+        margin: auto;
+        margin-top: 30px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <nav>
+        <!-- Utilizado para links de navegação 
+    OBS: nem todo link precisa esta em uma tag <NAV> -->
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="assuntos"></section>
+
+      <section id="noticias">
+        <article>
+          <!--Arcticle podem ser usados dentro de Section e vice-versa-->
+          <h2>Notícias do Brasil</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            laudantium provident officiis esse amet aut eos iste dolorum, non
+            suscipit expedita quae harum incidunt hic voluptas consectetur
+            aspernatur quis cum!
+          </p>
+          <aside>
+            <!-- Ultilizado para conteudo separados mas relacionado ao seu anterior. Como
+        links, autor, perfil social -->
+            <p>Autor Jose da Silva</p>
+          </aside>
+        </article>
+
+        <article></article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Desenvolvido por CursoemVideo</p>
+    </footer>
+    <p id="bola"></p>
+  </body>
+</html>

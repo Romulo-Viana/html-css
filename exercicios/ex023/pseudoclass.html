@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classe</title>
+    <style>
+      div {
+        display: inline-block;
+        background-color: gray;
+        border: solid 1px black; /* SHORTHAND */
+        text-align: center;
+        height: 200px;
+        width: 200px;
+      }
+      #d1:hover {
+        background-color: yellow;
+        height: 230px;
+        width: 230px;
+      }
+      #d2::before {  
+        color: red;
+      }
+      #d0:hover > p {
+        color: blue;
+        display: none;
+        font-size: 36px;
+      }
+
+      #d0 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div > p{
+        font-size: 20px;
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d0">
+        Passe o mouse aqui.
+        <p>Este parágrafo foi alterado.</p>
+    </div>
+    <p>Este parágrafo não sofrerá alterações.</p>
+
+    <hr>
+    <!-- Lembrando que n devemos usar mais de um ID por documento, aqui estou usando para fins educacionais -->
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+  </body>
+</html>
