@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD   (O uso de head não é obrigatório)
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT   (O uso de head não é obrigatório)
+                TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+            <tbody>
+                <tr>
+                    <td>01 - São Paulo</td>
+                    <td class="num">44 420 459</td>
+                </tr>
+                <tr>
+                    <td>02 - Minas Gerais</td>
+                    <td class="num">20 538 718</td>
+                </tr>
+                <tr>
+                    <td>03 - Rio de Janeiro</td>
+                    <td class="num">16 054 524</td>
+                </tr>
+                <tr>
+                    <td>04 - Bahia</td>
+                    <td class="num">14 136 417</td>
+                </tr>
+                <tr>
+                    <td>05 - Paraná</td>
+                    <td class="num">11 443 208</td>
+                </tr>
+                <tr>
+                    <td>06 - Rio Grande do Sul</td>
+                    <td class="num">10 880 506</td>
+                </tr>
+                <tr>
+                    <td>07 - Pernambuco</td>
+                    <td class="num">9 058 155</td>
+                </tr>
+                <tr>
+                    <td>08 - Ceará</td>
+                    <td class="num">8 791 688</td>
+                </tr>
+                <tr>
+                    <td>09 - Pará</td>
+                    <td class="num">8 116 132</td>
+                </tr>
+                <tr>
+                    <td>10 - Santa Catarina</td>
+                    <td class="num">7 609 601</td>
+                </tr>
+                <tr>
+                    <td>11 - Goiás</td>
+                    <td class="num">7 055 228</td>
+                </tr>
+                <tr>
+                    <td>12 - Maranhão</td>
+                    <td class="num">6 775 152</td>
+                </tr>
+                <tr>
+                    <td>13 - Paraíba</td>
+                    <td class="num">3 974 495</td>
+                </tr>
+                <tr>
+                    <td>14 - Amazonas</td>
+                    <td class="num">3 941 175</td>
+                </tr>
+                <tr>
+                    <td>15 - Espírito Santo</td>
+                    <td class="num">3 833 486</td>
+                </tr>
+                <tr>
+                    <td>16 - Mato Grosso</td>
+                    <td class="num">3 658 813</td>
+                </tr>
+                <tr>
+                    <td>17 - Rio Grande do Norte</td>
+                    <td class="num">3 302 406</td>
+                </tr>
+                <tr>
+                    <td>18 - Piauí</td>
+                    <td class="num">3 269 200</td>
+                </tr>
+                <tr>
+                    <td>19 - Alagoas</td>
+                    <td class="num">3 127 511</td>
+                </tr>
+                <tr>
+                    <td>20 - Distrito Federal</td>
+                    <td class="num">2 817 068</td>
+                </tr>
+                <tr>
+                    <td>21 - Mato Grosso do Sul</td>
+                    <td class="num">2 756 700</td>
+                </tr>
+                <tr>
+                    <td>22 - Sergipe</td>
+                    <td class="num">2 209 558</td>
+                </tr>
+                <tr>
+                    <td>23 - Rondônia</td>
+                    <td class="num">1 581 016</td>
+                </tr>
+                <tr>
+                    <td>24 - Tocantins</td>
+                    <td class="num">1 511 459</td>
+                </tr>
+                <tr>
+                    <td>25 - Acre</td>
+                    <td class="num">830 026</td>
+                </tr>
+                <tr>
+                    <td>26 - Amapá</td>
+                    <td class="num">733 508</td>
+                </tr>
+                <tr>
+                    <td>27 - Roraima</td>
+                    <td class="num">636 303</td>
+                </tr>
+            </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td class="num"><strong>203 062 512</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
