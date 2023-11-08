@@ -11,19 +11,14 @@ table {
 
 th {
     background-color: rgb(227, 239, 241);
-}
-
-td, th {
     border: 1px solid black;
     padding: 10px;
 }
 
-.uniccolor {
-    background-color: rgb(227, 239, 241);
-    font-weight: bolder;
-}
-
-.conteudo {
+td {
+    border: 1px solid black;
+    padding: 10px;
     line-height: 2em;
     color: rgba(0, 0, 0, 0.747);
+    
 }
